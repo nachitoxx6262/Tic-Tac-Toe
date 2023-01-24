@@ -1,7 +1,7 @@
 import Square from "./Square"
 const Winner = ({winner,resetGame})=>{
     if(winner === null) return null
-    const winnerText = winner == false ? "Empate" : `Ganó`
+    const winnerText = winner == false ? "Tie game" : `Won`
     return(
         
             <section className="winner">
@@ -11,7 +11,7 @@ const Winner = ({winner,resetGame})=>{
                   {winner && <Square>{winner}</Square>}
                 </header>
                 <footer>
-                  <button onClick={resetGame}>Empezar de nuevo</button>
+                  <button onClick={resetGame}>Restart Game</button>
                 </footer>
               </div>
             </section>
