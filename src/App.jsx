@@ -65,6 +65,7 @@ function App() {
   };
 
   return (
+    <>
     <main className="board">
       <h1>Tic tac toe</h1>
       <button onClick={resetGame}>Restart Game</button>
@@ -84,6 +85,8 @@ function App() {
       </section>
       <Winner resetGame={resetGame} winner={winner} />
     </main>
+    <a style={{"text-decoration":"none", "color":"white","display":"flex","justifyContent":"center"}} href="https://github.com/nachitoxx6262">Ignacio Peñamaria - GitHub</a>
+    </>
   );
 }
 
